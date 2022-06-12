@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Container from './components/container/Container';
+import TextHeader from './components/tittle/TextHeader';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Container className='header'><TextHeader class='textHeader' name='Patricia Silva Oliveira' 
+        linkedin='linkedin' zap='12345' instagram='olli.so17'></TextHeader></Container>
+        <Container className='body'>Body</Container>
+        <Container className='footer'>Footer</Container>
+
     </div>
   );
 }

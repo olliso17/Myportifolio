@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    width: 98vw;
+    height: 10vh;
+    margin: 1vw;
+    border-radius: 1vw;
+    background-color: blueviolet;
+    box-shadow: 0vw 0.1vw 0vw black;
+}
+
+.body {
+    width: 98vw;
+    height: 70vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 1vw;
+    background-color: blueviolet;
+    box-shadow: 0vw 0.1vw 0vw black;
+}
+
+.footer {
+    width: 98vw;
+    height: 10vh;
+    margin: 1vw;
+    border-radius: 1vw;
+    background-color: blueviolet;
+    box-shadow: 0vw 0.1vw 0vw black;
+}
