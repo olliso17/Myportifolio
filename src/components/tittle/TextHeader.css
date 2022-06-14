@@ -16,9 +16,9 @@
 
 .textHeader h1 {
     margin-left: 1vw;
-    font-family: 'Libre Franklin', sans-serif;
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Patrick Hand', cursive;
-    color: black;
-    font-size: 1.5vw
+    font-family: 'Fascinate', cursive;
+    color: #450750;
+    text-shadow: 2px 2px 2px #b64fc8;
+    font-weight: 700;
+    font-size: 1.5vw;
 }
