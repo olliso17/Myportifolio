@@ -1,19 +1,32 @@
 import React from 'react';
 import './App.css';
 import Container from './components/container/Container';
-import TextHeader from './components/tittle/TextHeader';
+import Card from './components/tittle/Card';
+import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
+
+
 
 function App() {
   return (
     <div className="App">
         <Container className='header'>
-          <Container className='nomeCard'><TextHeader class='textHeader' name='Patricia Silva Oliveira'></TextHeader></Container>
-          <Container className='nomeLinkedin'><TextHeader class='textHeader' name='linke'></TextHeader></Container>
-          <Container className='nomeZap'><TextHeader class='textHeader' name='zap'></TextHeader></Container>
-          <Container className='nomeGit'><TextHeader class='textHeader' name='Git'></TextHeader></Container>
-          </Container>
-        <Container className='body'>Body</Container>
-        <Container className='footer'>Footer</Container>
+            <Card class='card-head'>
+                <img src={require('./image/foto.jpg')} alt="" />
+            </Card>
+            <Card class='card-link'>
+              <Card class='link'><FaLinkedin/></Card>
+              <Card class='link'><FaGithub/></Card>
+              <Card class='link'><FaWhatsapp/></Card>
+            </Card>
+          
+            
+        </Container>
+        <Container className='body'>
+          <Card class='text-body'><h1>Patrícia Silva Oliveira</h1></Card>
+        </Container>
+        <Container className='footer'>
+
+        </Container>
 
     </div>
   );

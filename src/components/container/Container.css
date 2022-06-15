@@ -1,101 +1,47 @@
+/* :root {
+    --color-background1: #7e33b7;
+    --color-background2: #a167c9;
+    --color-background3: #c299dc;
+    --color-background4: #e1cbee;
+    --color-shadown1: #35007c;
+    --color-shadown2: #58079c;
+    --color-shadown3: #640ba7;
+    --color-contrast1: #b57c00;
+    --color-contrast2: #d09306;
+    --color-contrast3: #ecab0f;
+    --color-contrast4: #f7d547;
+} */
+
 .header {
     display: flex;
-    width: 99vw;
-    margin: 0.5vw;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 1vw;
-    background-color: rgb(243, 166, 243);
-    box-shadow: 0px 0px 5px 1px #b64fc8;
-}
-
-.nomeCard {
-    display: flex;
-    width: 60vw;
-    height: 8vh;
-    margin: 0.5vw;
-    border-radius: 1vw;
-    background-color: #df6cf3;
-    border-color: #b64fc8;
-    border-style: solid;
-    border-width: 2px;
-    box-shadow: 0px 0px 5px 1px #b64fc8;
-}
-
-.nomeCard:hover {
-    background-color: #df6cf3;
-    text-shadow: 2px 2px 2px #b64fc8;
-}
-
-.nomeLinkedin {
-    display: flex;
-    width: 5vw;
-    height: 8vh;
-    margin: 1vw;
-    border-radius: 1vw;
-    background-color: #cf32eb;
-    border-color: #b64fc8;
-    border-style: solid;
-    border-width: 2px;
-    box-shadow: 0px 0px 10px 1px #b64fc8;
-}
-
-.nomeLinkedin:hover {
-    background-color: #df6cf3;
-    text-shadow: 2px 2px 2px #b64fc8;
-}
-
-.nomeZap {
-    display: flex;
-    width: 5vw;
-    height: 8vh;
-    margin: 1vw;
-    border-radius: 1vw;
-    background-color: #cf32eb;
-    border-color: #b64fc8;
-    border-style: solid;
-    border-width: 2px;
-    box-shadow: 0px 0px 10px 1px #b64fc8;
-}
-
-.nomeZap:hover {
-    background-color: #df6cf3;
-    text-shadow: 2px 2px 2px #b64fc8;
-}
-
-.nomeGit {
-    display: flex;
-    width: 5vw;
-    height: 8vh;
-    margin: 1vw;
-    border-radius: 1vw;
-    background-color: #cf32eb;
-    border-color: #b64fc8;
-    border-style: solid;
-    border-width: 2px;
-    box-shadow: 0px 0px 10px 1px #b64fc8;
-}
-
-.nomeGit:hover {
-    background-color: #df6cf3;
-    text-shadow: 2px 2px 2px #b64fc8;
+    justify-content: space-around;
+    align-items: start;
+    padding: var(--padding-container);
+    flex-wrap: wrap;
+    width: 37vw;
+    height: var(--height-container);
+    border-radius: var(--border-radius);
+    background: linear-gradient( to bottom right, var(--color-contrast3), var(--color-contrast1));
+    box-shadow: 5px 5px 30px 2px var(--color-background5), inset -6px -6px 15px 0px var(--color-background4), inset 0px 0px 2px 0px var(--color-contrast1);
 }
 
 .body {
-    width: 98vw;
-    height: 70vh;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    border-radius: 1vw;
-    background-color: #ea80fc;
-    box-shadow: 0vw 0.1vw 0vw #b64fc8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54vw;
+    padding: var(--padding-container);
+    height: var(--height-container);
+    border-radius: var(--border-radius);
+    background: linear-gradient( to bottom right, var(--color-contrast3), var(--color-contrast1));
+    box-shadow: 5px 5px 30px 2px var(--color-background5), inset -6px -6px 15px 0px var(--color-background4), inset 0px 0px 2px 0px var(--color-contrast1);
 }
 
 .footer {
-    width: 98vw;
-    height: 10vh;
-    margin: 1vw;
-    border-radius: 1vw;
-    background-color: #ea80fc;
-    box-shadow: 0vw 0.1vw 0vw #b64fc8;
+    width: 96vw;
+    height: 21vh;
+    border-radius: var(--border-radius);
+    border-radius: var(--border-radius);
+    background: linear-gradient( to bottom right, var(--color-contrast3), var(--color-contrast1));
+    box-shadow: 5px 5px 30px 2px var(--color-background5), inset -6px -6px 15px 0px var(--color-background4), inset 0px 0px 2px 0px var(--color-contrast1);
 }
