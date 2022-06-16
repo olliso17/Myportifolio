@@ -1,11 +1,7 @@
 .App {
-    overflow: hidden;
-    width: 98vw;
-    height: 98vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: start;
-    padding: 1vw;
-    background: linear-gradient( to bottom right, var(--color-background2), var(--color-background3), var(--color-background4));
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 0.8fr 0.3fr 3fr;
+    grid-template-rows: 1fr 2fr 1fr;
 }

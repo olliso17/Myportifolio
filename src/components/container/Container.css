@@ -1,47 +1,39 @@
-/* :root {
-    --color-background1: #7e33b7;
-    --color-background2: #a167c9;
-    --color-background3: #c299dc;
-    --color-background4: #e1cbee;
-    --color-shadown1: #35007c;
-    --color-shadown2: #58079c;
-    --color-shadown3: #640ba7;
-    --color-contrast1: #b57c00;
-    --color-contrast2: #d09306;
-    --color-contrast3: #ecab0f;
-    --color-contrast4: #f7d547;
-} */
-
-.header {
-    display: flex;
-    justify-content: space-around;
-    align-items: start;
-    padding: var(--padding-container);
-    flex-wrap: wrap;
-    width: 37vw;
-    height: var(--height-container);
-    border-radius: var(--border-radius);
-    background: linear-gradient( to bottom right, var(--color-contrast3), var(--color-contrast1));
-    box-shadow: 5px 5px 30px 2px var(--color-background5), inset -6px -6px 15px 0px var(--color-background4), inset 0px 0px 2px 0px var(--color-contrast1);
-}
-
-.body {
+.container-image {
+    grid-column: 1;
+    grid-row: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 54vw;
-    padding: var(--padding-container);
-    height: var(--height-container);
-    border-radius: var(--border-radius);
-    background: linear-gradient( to bottom right, var(--color-contrast3), var(--color-contrast1));
-    box-shadow: 5px 5px 30px 2px var(--color-background5), inset -6px -6px 15px 0px var(--color-background4), inset 0px 0px 2px 0px var(--color-contrast1);
 }
 
-.footer {
-    width: 96vw;
-    height: 21vh;
-    border-radius: var(--border-radius);
-    border-radius: var(--border-radius);
-    background: linear-gradient( to bottom right, var(--color-contrast3), var(--color-contrast1));
-    box-shadow: 5px 5px 30px 2px var(--color-background5), inset -6px -6px 15px 0px var(--color-background4), inset 0px 0px 2px 0px var(--color-contrast1);
+.container-link {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-text {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.container-aleatorio {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.container-footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 3;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
