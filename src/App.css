@@ -4,4 +4,5 @@
     height: 100vh;
     grid-template-columns: 0.8fr 0.3fr 3fr;
     grid-template-rows: 1fr 2fr 1fr;
+    background: linear-gradient(to bottom left, var(--purple4), var(--purple3), var(--purple2), var(--purple1));
 }

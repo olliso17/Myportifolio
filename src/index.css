@@ -137,18 +137,11 @@ table {
 }
 
 :root {
-    --color-background1: #e5dde6;
-    --color-background2: #dfcae1;
-    --color-background3: #c0a0c3;
-    --color-background4: #a788ab;
-    --color-background5: #8f7193;
-    --color-shadown1: #35007c;
-    --color-shadown2: #58079c;
-    --color-shadown3: #640ba7;
-    --color-contrast3: #f5fac1;
-    --color-contrast2: #fffec2;
-    --color-contrast1: #ffda89;
-    --border-radius: 1.5vw;
-    --height-container: 66vh;
-    --padding-container: 1vw;
+    --purple1: #9d4bf0;
+    --purple2: #bf94eb;
+    --purple3: #bf94eb;
+    --purple4: #E3D2F4;
+    --pink1: #FFD1D0;
+    --blue1: #AFDEFA;
+    --green1: #BDF6E3;
 }
