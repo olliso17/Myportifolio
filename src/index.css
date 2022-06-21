@@ -137,11 +137,15 @@ table {
 }
 
 :root {
-    --purple1: #9d4bf0;
+    --purple1: #7c1eda;
+    --purple5: #572c81;
     --purple2: #bf94eb;
     --purple3: #bf94eb;
     --purple4: #E3D2F4;
     --pink1: #FFD1D0;
     --blue1: #AFDEFA;
+    --blue2: #11415e;
+    --blue3: #81c9f3;
+    --blue4: #cdebfc;
     --green1: #BDF6E3;
 }
