@@ -4,23 +4,24 @@ import Container from './components/container/Container';
 import Card from './components/tittle/Card';
 import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 import Button from './components/button/Button';
-
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <div className="App">
         <Container className='container-image'>
-            <Card class='card-head'>
-                <img src={require('./image/foto.jpg')} alt="" />
-            </Card>   
+          <Card class='card-head'>
+            <img src={require('./image/foto.jpg')} alt="" />
+          </Card>
         </Container>
         <Container className='container-link'>
           <Card class='card-link'>
-              <Button class='link' ><FaLinkedin/></Button>
-              <Button class='link'><FaGithub/></Button>
-              <Button class='link'><FaWhatsapp/></Button>
-            </Card>
+            <Button href='https://www.linkedin.com/in/patricia-silva-oliveira-/' target='_blank' class='link' ><FaLinkedin /></Button>
+            <Button href='https://github.com/olliso17' class='link' target='_blank'><FaGithub /></Button>
+            <Button href='https://api.whatsapp.com/send?phone=5579996519451' class='link' target='_blank'><FaWhatsapp /></Button>
+          </Card>
         </Container>
         <Container className='container-aleatorio'>
           <Card class='card-aleatorio'>
@@ -38,11 +39,12 @@ function App() {
         </Container>
         <Container className='container-footer'>
           <Card class='card-footer'>
-            
+
           </Card>
         </Container>
 
-    </div>
+      </div>
+    </Router>
   );
 }
 
