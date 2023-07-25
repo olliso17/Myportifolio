@@ -8,11 +8,10 @@ type ContainerProps = {
 export const ContainerBody = ({ children }: ContainerProps) => {
   return (
     <Flex
-      height={"100vh"}
       maxW={"100vw"}
       display={"flex"}
-      alignItems={"center"}
-      justifyContent={"space-around"}
+      alignSelf={"end"}
+      justifyContent={"space-between"}
       backgroundColor={"gray.300"}
     >
       {children}

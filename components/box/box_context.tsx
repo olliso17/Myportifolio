@@ -1,4 +1,4 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Card, Flex, Link, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import api from "../../core/api";
 
@@ -18,25 +18,22 @@ export const BoxContext = () => {
     getUsers();
   }, []);
 
-  // return (
-  //   <div>
-  //
-  //   </div>
-  // );
   return (
     <Flex
-      direction={"column"}
       bg="pink.400"
       color="black"
-      height={"100vh"}
       width={"50vw"}
-      maxW={"50vw"}
+      direction={"column"}
+      justifyContent={"space-between"}
+      alignItems={"center"}
     >
       {users &&
         users.map((user) => (
-          <li key={user.id}>
-            {user.name} | {user.html_url} | {user.language}
-          </li>
+          <Card width={"40vw"} height={"20vh"} key={user.id} margin={"1vh"}>
+            <Text>{user.name}</Text>
+            <Link>{user.html_url}</Link>
+            <Text>{user.language}</Text>
+          </Card>
         ))}
     </Flex>
   );

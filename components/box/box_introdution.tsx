@@ -1,16 +1,19 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Card, Flex, Text } from "@chakra-ui/react";
 
 export const BoxIntrodution = () => {
   return (
     <Flex
       bg="blue.400"
       color="black"
-      height={"100vh"}
-      maxW={"50vw"}
+      minH={"100%"}
       width={"50vw"}
-      justifyContent={"center"}
+      position={"fixed"}
+      bottom={0}
+      left={0}
     >
-      Patrícia Silva Oliveira
+      <Card width={"40vw"} height={"20vh"} margin={"1vh"}>
+        <Text>Patricia Silva Oliveira</Text>
+      </Card>
     </Flex>
   );
 };
