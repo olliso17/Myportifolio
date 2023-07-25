@@ -11,6 +11,8 @@ export const ContainerBody = ({ children }: ContainerProps) => {
       maxW={"100vw"}
       display={"flex"}
       alignSelf={"end"}
+      pl={[4, 8, 16, 32]}
+      flexDirection={{base:'row', sm:'column', md:'column', lg:'row', xl:"row"}}
       justifyContent={"space-between"}
       backgroundColor={"gray.300"}
     >

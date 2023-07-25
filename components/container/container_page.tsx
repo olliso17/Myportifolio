@@ -11,6 +11,7 @@ export const ContainerPage = ({ children }: ContainerProps) => {
       height={"100vh"}
       width={"100vw"}
       display={"flex"}
+      pl={[4, 8, 16, 32]}
       flexDirection={"column"}
       alignItems={"center"}
       justifyContent={"space-between"}
