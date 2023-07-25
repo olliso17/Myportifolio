@@ -1,12 +1,23 @@
-import { Box, Card, Flex, Link, Text } from "@chakra-ui/react";
+import { Card, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import api from "../../core/api";
 
 export const BoxContext = () => {
-  const [users, setUsers] = useState<any[]>([]);
-  const getUsers = async () => {
+  const [users, setUsers] = useState<any>();
+  const [userRepo, setUserRepo] = useState<any[]>([]);
+  const getUserRepo = async () => {
     await api
       .get("users/olliso17/repos")
+      .then((res) => {
+        setUserRepo(res.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+  const getUsers = async () => {
+    await api
+      .get("users/olliso17")
       .then((res) => {
         setUsers(res.data);
       })
@@ -15,9 +26,10 @@ export const BoxContext = () => {
       });
   };
   useEffect(() => {
+    getUserRepo();
     getUsers();
   }, []);
-
+  var count = 1;
   return (
     <Flex
       bg="pink.400"
@@ -27,12 +39,15 @@ export const BoxContext = () => {
       justifyContent={"space-between"}
       alignItems={"center"}
     >
-      {users &&
-        users.map((user) => (
-          <Card width={"40vw"} height={"20vh"} key={user.id} margin={"1vh"}>
-            <Text>{user.name}</Text>
-            <Link>{user.html_url}</Link>
-            <Text>{user.language}</Text>
+      {users && users.public_repos}
+
+      {userRepo &&
+        userRepo.map((repo) => (
+          <Card width={"40vw"} height={"20vh"} key={repo.id} margin={"1vh"}>
+            {count++}
+            <Heading size={"xl"}>{repo.name}</Heading>
+            <Link>{repo.html_url}</Link>
+            <Text>{repo.language}</Text>
           </Card>
         ))}
     </Flex>
