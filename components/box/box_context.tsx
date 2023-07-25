@@ -5,6 +5,7 @@ import api from "../../core/api";
 export const BoxContext = () => {
   const [users, setUsers] = useState<any>();
   const [userRepo, setUserRepo] = useState<any[]>([]);
+  //https://api.github.com/repos/olliso17/task_go para pegar o repositório que eu desejo  
   const getUserRepo = async () => {
     await api
       .get("users/olliso17/repos")
