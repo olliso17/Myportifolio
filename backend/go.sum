@@ -1,0 +1,4 @@
+github.com/SebastiaanKlippert/go-wkhtmltopdf v1.9.1 h1:Jjo2fL1ByctCHRP99RGohe7ESvupcbRO/2E8Ps3ZcSw=
+github.com/SebastiaanKlippert/go-wkhtmltopdf v1.9.1/go.mod h1:SQq4xfIdvf6WYKSDxAJc+xOJdolt+/bc1jnQKMtPMvQ=
+github.com/adrg/go-wkhtmltopdf v0.3.0 h1:Zy/bbS6fPlAzuogW5uKa/sLX+SNWwV2DvVued0ZD55c=
+github.com/adrg/go-wkhtmltopdf v0.3.0/go.mod h1:PabO59E2w5GMKC8apqcXmf5rZZmiydIP3H1Wb4Uox6I=
