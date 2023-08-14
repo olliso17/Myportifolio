@@ -1,5 +1,0 @@
-# github.com/SebastiaanKlippert/go-wkhtmltopdf v1.9.1
-## explicit; go 1.19
-# github.com/adrg/go-wkhtmltopdf v0.3.0
-## explicit; go 1.14
-github.com/adrg/go-wkhtmltopdf

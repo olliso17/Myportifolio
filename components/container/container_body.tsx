@@ -12,7 +12,13 @@ export const ContainerBody = ({ children }: ContainerProps) => {
       display={"flex"}
       alignSelf={"end"}
       pl={[4, 8, 16, 32]}
-      flexDirection={{base:'row', sm:'column', md:'column', lg:'row', xl:"row"}}
+      flexDirection={{
+        base: "row",
+        sm: "column",
+        md: "column",
+        lg: "row",
+        xl: "row",
+      }}
       justifyContent={"space-between"}
       backgroundColor={"gray.300"}
     >
