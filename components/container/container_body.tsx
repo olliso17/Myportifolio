@@ -1,6 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import { ReactNode } from "react";
-import { ContainerBodyStyle } from "../../style_config/container/container_body";
+import { ContainerBodyStyle } from "../../style_config/container_body";
 
 type ContainerProps = {
   children: ReactNode;
