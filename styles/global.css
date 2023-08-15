@@ -145,7 +145,7 @@ table {
 }
 
 .animated-text {
-  animation: fadeInUp1 4s ease-in-out;
+  animation: fadeInUp1 5s ease-in-out;
   opacity: 1;
 }
 

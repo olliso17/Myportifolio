@@ -9,7 +9,7 @@ export const CardHeader = () => {
   return (
     <>
       <Heading
-        bgGradient="linear(to-l, gray.100, gray.200, gray.500)"
+        bgGradient="linear(to-l, green.100, blue.200, gray.200, gray.500)"
         bgClip="text"
         fontWeight="extrabold"
         as="h1"
@@ -21,7 +21,7 @@ export const CardHeader = () => {
         Hi, my name is Patricia
       </Heading>
       <Text
-        bgGradient="linear(to-l, gray.100, gray.200, gray.500)"
+        bgGradient="linear(to-l, green.100, blue.200, gray.200, gray.500)"
         bgClip="text"
         fontWeight="extrabold"
         className="animated-text"

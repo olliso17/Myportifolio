@@ -8,7 +8,7 @@ type BoxProps = {
 export const BoxIntrodution = ({ children }: BoxProps) => {
   return (
     <Flex
-      bgGradient="linear(to-b, gray.800, gray.600, gray.400)"
+      bgGradient="linear(to-b, purple.900, gray.600, gray.500, green.200)"
       color="black"
       minH={"100%"}
       maxW={"100%"}
