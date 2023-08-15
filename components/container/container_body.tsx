@@ -1,6 +1,5 @@
-import { Flex } from "@chakra-ui/react";
+import { Button, Flex } from "@chakra-ui/react";
 import { ReactNode } from "react";
-import { ContainerBodyStyle } from "../../style_config/container_body";
 
 type ContainerProps = {
   children: ReactNode;
@@ -9,11 +8,17 @@ type ContainerProps = {
 export const ContainerBody = ({ children }: ContainerProps) => {
   return (
     <Flex
-      maxW={ContainerBodyStyle.maxW}
-      width={ContainerBodyStyle.width}
-      alignItems={ContainerBodyStyle.alignItems}
-      direction={ContainerBodyStyle.direction}
-      justifyContent={ContainerBodyStyle.justifyContent}
+      className="box_context"
+      maxW={"100vw"}
+      width={"100vw"}
+      display={"flex"}
+      alignItems={"baseline"}
+      flexDirection={{
+        base: "column",
+        lg: "row",
+        xl: "row",
+      }}
+      justifyContent={"space-between"}
     >
       {children}
     </Flex>

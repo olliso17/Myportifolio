@@ -1,27 +1,40 @@
 import {
+  Box,
+  Card,
+  Container,
   Flex,
+  Heading,
+  Link,
+  Text,
 } from "@chakra-ui/react";
-import { BoxContextStyle } from "../../style_config/box/box_context";
 import { ReactNode } from "react";
 
-type BoxContextProps = {
+type BoxProps = {
   children: ReactNode;
 };
-
-export const BoxContext = ({children}:BoxContextProps) => {
-
+export const BoxContext = ({ children }: BoxProps) => {
   return (
     <Flex
-      bg={BoxContextStyle.bg}
-      maxW={BoxContextStyle.maxW}
-      direction={BoxContextStyle.direction}
-      width={BoxContextStyle.width}
-      position={BoxContextStyle.position}
-      justifyContent={BoxContextStyle.justifyContent}
-      alignItems={BoxContextStyle.alignItems}
-      right={BoxContextStyle.rigth}
+      bg="gray.900"
+      color="black"
+      maxW={"100%"}
+      direction={"column"}
+      width={{
+        base: "100vw",
+        lg: "50vw",
+        xl: "50vw",
+      }}
+      // pl={[4, 8, 16, 32]}
+      position={{
+        base: "relative",
+        lg: "absolute",
+        xl: "absolute",
+      }}
+      justifyContent={"center"}
+      alignItems={"center"}
+      right={{ base: 0, lg: 0, xl: 0 }}
     >
-     {children}
+      {children}
     </Flex>
   );
 };
