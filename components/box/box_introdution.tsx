@@ -1,5 +1,6 @@
-import { Box, Card, Center, Flex, Text } from "@chakra-ui/react";
-import { Children, ReactNode } from "react";
+import {Flex} from "@chakra-ui/react";
+import { ReactNode } from "react";
+import { BoxIntrodutionStyle } from "../../style_config/box/box_introdution";
 
 type BoxProps = {
   children: ReactNode;
@@ -8,24 +9,15 @@ type BoxProps = {
 export const BoxIntrodution = ({ children }: BoxProps) => {
   return (
     <Flex
-      bgGradient="linear(to-b, purple.900, gray.600, gray.500, green.200)"
-      color="black"
-      minH={"100%"}
-      maxW={"100%"}
-      width={{
-        base: "100vw",
-        lg: "50vw",
-        xl: "50vw",
-      }}
-      justifyContent={"center"}
-      wrap={"wrap"}
-      position={{
-        base: "relative",
-        lg: "fixed",
-        xl: "fixed",
-      }}
-      bottom={{ base: 0, lg: 0, xl: 0 }}
-      left={{ base: 0, lg: 0, xl: 0 }}
+      bgGradient={BoxIntrodutionStyle.bgGradient}
+      minH={BoxIntrodutionStyle.minH}
+      maxW={BoxIntrodutionStyle.maxW}
+      width={BoxIntrodutionStyle.width}
+      justifyContent={BoxIntrodutionStyle.justifyContent}
+      wrap={BoxIntrodutionStyle.wrap}
+      position={BoxIntrodutionStyle.position}
+      bottom={BoxIntrodutionStyle.bottom}
+      left={BoxIntrodutionStyle.left}
     >
       {children}
     </Flex>
