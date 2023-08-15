@@ -10,7 +10,9 @@ export default function Home() {
         <Card.body />
         <Card.footer />
       </Box.introducion>
-      <Box.context />
+      <Box.context>
+        <Card.context/>
+      </Box.context>
     </Container.body>
   );
 }
