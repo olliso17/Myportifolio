@@ -7,17 +7,16 @@ type ContainerProps = {
 
 export const ContainerPage = ({ children }: ContainerProps) => {
   return (
-    <Flex
+    <Container
       height={"100vh"}
       width={"100vw"}
-      display={"flex"}
       pl={[4, 8, 16, 32]}
       flexDirection={"column"}
       alignItems={"center"}
       justifyContent={"space-between"}
-      backgroundColor={"gray.100"}
+      backgroundColor={"red"}
     >
       {children}
-    </Flex>
+    </Container>
   );
 };

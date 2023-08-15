@@ -1,4 +1,4 @@
-import { Container, Flex } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
 type ContainerProps = {
@@ -8,19 +8,18 @@ type ContainerProps = {
 export const ContainerBody = ({ children }: ContainerProps) => {
   return (
     <Flex
+      className="box_context"
       maxW={"100vw"}
+      width={"100vw"}
       display={"flex"}
-      alignSelf={"end"}
-      pl={[4, 8, 16, 32]}
+      alignItems={"baseline"}
       flexDirection={{
-        base: "row",
-        sm: "column",
-        md: "column",
+        base: "column",
         lg: "row",
         xl: "row",
       }}
       justifyContent={"space-between"}
-      backgroundColor={"gray.300"}
+      backgroundColor={"red"}
     >
       {children}
     </Flex>

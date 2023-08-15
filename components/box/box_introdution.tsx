@@ -6,13 +6,16 @@ export const BoxIntrodution = () => {
       bg="blue.400"
       color="black"
       minH={"100%"}
-      width={{ base: "50vw", sm: "100vw", md: "100vw", lg: "50vw", xl: "50vw" }}
-      pl={[4, 8, 16, 32]}
+      maxW={"100%"}
+      width={{
+        base: "100vw",
+        lg: "50vw",
+        xl: "50vw",
+      }}
+      justifyContent={"center"}
       wrap={"wrap"}
       position={{
-        base: "fixed",
-        sm: "relative",
-        md: "relative",
+        base: "relative",
         lg: "fixed",
         xl: "fixed",
       }}
@@ -21,16 +24,12 @@ export const BoxIntrodution = () => {
     >
       <Card
         width={{
-          base: "40vw",
-          sm: "100vw",
-          md: "100vw",
+          base: "100vw",
           lg: "40vw",
           xl: "40vw",
         }}
         height={{
-          base: "20vh",
-          sm: "10vh",
-          md: "10vh",
+          base: "10vh",
           lg: "20vh",
           xl: "20vh",
         }}

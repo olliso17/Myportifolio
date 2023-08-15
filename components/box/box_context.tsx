@@ -1,11 +1,19 @@
-import { Card, Flex, Heading, Link, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Card,
+  Container,
+  Flex,
+  Heading,
+  Link,
+  Text,
+} from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import api from "../../core/api";
 
 export const BoxContext = () => {
   const [users, setUsers] = useState<any>();
   const [userRepo, setUserRepo] = useState<any[]>([]);
-  //https://api.github.com/repos/olliso17/task_go para pegar o repositório que eu desejo  
+  //https://api.github.com/repos/olliso17/task_go para pegar o repositório que eu desejo
   const getUserRepo = async () => {
     await api
       .get("users/olliso17/repos")
@@ -35,18 +43,38 @@ export const BoxContext = () => {
     <Flex
       bg="pink.400"
       color="black"
-      width={{base:"50vw", sm:"100vw", md:"100vw", lg:'50vw', xl:"50vw"}}
-      pl={[4, 8, 16, 32]}
+      maxW={"100%"}
       direction={"column"}
-      justifyContent={"space-between"}
+      width={{
+        base: "100vw",
+        lg: "50vw",
+        xl: "50vw",
+      }}
+      // pl={[4, 8, 16, 32]}
+      position={{
+        base: "relative",
+        lg: "absolute",
+        xl: "absolute",
+      }}
+      justifyContent={"center"}
       alignItems={"center"}
+      right={{ base: 0, lg: 0, xl: 0 }}
     >
       {users && users.public_repos}
 
       {userRepo &&
         userRepo.map((repo) => (
-          <Card pl={[4, 8, 16, 32]}
-          width={"40vw"} height={"20vh"} key={repo.id} margin={"1vh"}>
+          <Card
+            // pl={[4, 8, 16, 32]}
+            width={{
+              base: "90vw",
+              lg: "40vw",
+              xl: "40vw",
+            }}
+            height={"20vh"}
+            key={repo.id}
+            margin={"1vh"}
+          >
             {count++}
             <Heading size={"xl"}>{repo.name}</Heading>
             <Link>{repo.html_url}</Link>
