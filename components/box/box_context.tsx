@@ -41,7 +41,7 @@ export const BoxContext = () => {
   var count = 1;
   return (
     <Flex
-      bg="pink.400"
+      bg="gray.900"
       color="black"
       maxW={"100%"}
       direction={"column"}

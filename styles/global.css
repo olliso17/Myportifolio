@@ -3,7 +3,6 @@
    License: none (public domain)
 */
 
-
 html,
 body,
 div,
@@ -127,4 +126,36 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.animated-title {
+  animation: fadeInUp 2s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-text {
+  animation: fadeInUp1 4s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes fadeInUp1 {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

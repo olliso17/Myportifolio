@@ -1,9 +1,14 @@
-import { Box, Card, Flex, Text } from "@chakra-ui/react";
+import { Box, Card, Center, Flex, Text } from "@chakra-ui/react";
+import { Children, ReactNode } from "react";
 
-export const BoxIntrodution = () => {
+type BoxProps = {
+  children: ReactNode;
+};
+
+export const BoxIntrodution = ({ children }: BoxProps) => {
   return (
     <Flex
-      bg="blue.400"
+      bgGradient="linear(to-b, gray.800, gray.600, gray.400)"
       color="black"
       minH={"100%"}
       maxW={"100%"}
@@ -22,21 +27,7 @@ export const BoxIntrodution = () => {
       bottom={{ base: 0, lg: 0, xl: 0 }}
       left={{ base: 0, lg: 0, xl: 0 }}
     >
-      <Card
-        width={{
-          base: "100vw",
-          lg: "40vw",
-          xl: "40vw",
-        }}
-        height={{
-          base: "10vh",
-          lg: "20vh",
-          xl: "20vh",
-        }}
-        margin={"1vh"}
-      >
-        <Text>Patricia Silva Oliveira</Text>
-      </Card>
+      {children}
     </Flex>
   );
 };
