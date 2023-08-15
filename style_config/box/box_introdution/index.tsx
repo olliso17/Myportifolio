@@ -1,9 +1,9 @@
-import { BgGradientBoxIntrodutionFlex, BottomBoxIntrodutionFlex, JustifyContentBoxIntrodutionFlex, LeftBoxIntrodutionFlex, MaxWBoxIntrodutionFlex, MinHBoxIntrodutionFlex, PositionBoxIntrodutionFlex, WidthBoxIntrodutionFlex, WrapBoxIntrodutionFlex } from "./box_introdution_style";
+import { BgGradientBoxIntrodutionFlex, BottomBoxIntrodutionFlex, JustifyContentBoxIntrodutionFlex, LeftBoxIntrodutionFlex, MaxWBoxIntrodutionFlex, MaxHBoxIntrodutionFlex, PositionBoxIntrodutionFlex, WidthBoxIntrodutionFlex, WrapBoxIntrodutionFlex } from "./box_introdution_style";
 
 export const BoxIntrodutionStyle = {
     bgGradient: BgGradientBoxIntrodutionFlex,
     maxW: MaxWBoxIntrodutionFlex,
-    minH: MinHBoxIntrodutionFlex,
+    minH: MaxHBoxIntrodutionFlex,
     width: WidthBoxIntrodutionFlex,
     justifyContent: JustifyContentBoxIntrodutionFlex,
     wrap: WrapBoxIntrodutionFlex,
