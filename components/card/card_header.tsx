@@ -7,25 +7,11 @@ type ContainerProps = {
 
 export const CardHeader = () => {
   return (
-    <Card
-      width={{
-        base: "100vw",
-        lg: "40vw",
-        xl: "40vw",
-      }}
-      height={{
-        base: "12vh",
-        lg: "20vh",
-        xl: "20vh",
-      }}
-      marginTop={"1vh"}
-      marginBottom={{ base: "5vh", lg: "15vh", xl: "15vh" }}
-      display={"flex"}
-      flexDirection={"column"}
-      alignItems={"center"}
-      justifyContent={"center"}
-    >
+    <>
       <Heading
+        bgGradient="linear(to-l, gray.100, gray.200, gray.500)"
+        bgClip="text"
+        fontWeight="extrabold"
         as="h1"
         fontSize={{ base: "xl", lg: "3xl", xl: "3xl" }}
         textAlign="center"
@@ -35,6 +21,9 @@ export const CardHeader = () => {
         Hi, my name is Patricia
       </Heading>
       <Text
+        bgGradient="linear(to-l, gray.100, gray.200, gray.500)"
+        bgClip="text"
+        fontWeight="extrabold"
         className="animated-text"
         fontSize={{ base: "sm", lg: "lg", xl: "xl" }}
         margin={"1vw"}
@@ -44,6 +33,6 @@ export const CardHeader = () => {
       </Text>
 
       {/* <Text>Header</Text> */}
-    </Card>
+    </>
   );
 };
