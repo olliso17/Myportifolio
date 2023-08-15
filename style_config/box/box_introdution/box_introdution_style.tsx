@@ -2,7 +2,7 @@ import { ResponsiveValue } from "@chakra-ui/react";
 
 export const BgGradientBoxIntrodutionFlex:ResponsiveValue<any> | undefined  = "linear(to-b, purple.900, gray.600, gray.500, green.200)"
 export const MaxWBoxIntrodutionFlex:ResponsiveValue<any> | undefined = "100%"
-export const MaxHBoxIntrodutionFlex:ResponsiveValue<any> | undefined = "100%"
+export const MinHBoxIntrodutionFlex:ResponsiveValue<any> | undefined = "100%"
 export const WidthBoxIntrodutionFlex:ResponsiveValue<any> | undefined = {
     base: "100vw",
     lg: "50vw",

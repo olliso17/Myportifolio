@@ -10,7 +10,7 @@ export const BoxIntrodution = ({ children }: BoxProps) => {
   return (
     <Flex
       bgGradient={BoxIntrodutionStyle.bgGradient}
-      maxH={BoxIntrodutionStyle.minH}
+      minH={BoxIntrodutionStyle.minH}
       maxW={BoxIntrodutionStyle.maxW}
       width={BoxIntrodutionStyle.width}
       justifyContent={BoxIntrodutionStyle.justifyContent}

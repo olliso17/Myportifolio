@@ -9,14 +9,14 @@ export const CardFooter = () => {
   return (
     <Card
       width={{
-        base: "100vw",
+        base: "50vw",
         lg: "40vw",
         xl: "40vw",
       }}
       height={{
         base: "10vh",
-        lg: "20vh",
-        xl: "20vh",
+        lg: "10vh",
+        xl: "10vh",
       }}
       marginTop={{ base: "5vh", lg: "15vh", xl: "15vh" }}
     >
