@@ -21,7 +21,7 @@ export const CardBody = () => {
         }}
         margin={"1vh"}
       >
-        <Text>Body</Text>
+        <Text>Body description</Text>
       </Card>
     </Center>
   );
