@@ -2,6 +2,12 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* Define a fonte Raleway para a classe 'body' */
+body {
+  font-family: 'Raleway', sans-serif;
+}
 
 html,
 body,

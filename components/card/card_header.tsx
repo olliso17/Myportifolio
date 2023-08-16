@@ -8,8 +8,6 @@ type ContainerProps = {
 export const CardHeader = () => {
   return (
     <Card
-      // border={"solid"}
-      // borderColor={"purple.200"}
       width={{
         base: "90vw",
         lg: "40vw",
@@ -23,6 +21,7 @@ export const CardHeader = () => {
       margin={"1vw"}
     >
       <Heading
+        fontFamily="body"
         bgColor="gray.200"
         bgClip="text"
         fontWeight="extrabold"
@@ -35,6 +34,7 @@ export const CardHeader = () => {
         Hi, my name is Patricia
       </Heading>
       <Text
+        fontFamily="body"
         bgColor="gray.200"
         bgClip="text"
         fontWeight="extrabold"

@@ -24,7 +24,7 @@ export const CardFooter = () => {
         xl: "10vh",
       }}
       bg={"gray.800"}
-      marginTop={{ base: "5vh", lg: "15vh", xl: "15vh" }}
+      marginTop={{ base: "5vh", lg: "20vh", xl: "20vh" }}
       display={"flex"}
       direction={"row"}
       alignItems={"center"}
@@ -32,23 +32,26 @@ export const CardFooter = () => {
       borderRadius={"1vw"}
       margin={"1vw"}
     >
-      <Link type="button" href="https://github.com/olliso17" isExternal>
-        <AiFillGithub fontSize={"55px"} color="white" />
+      <Link  type="button" href="https://github.com/olliso17" isExternal>
+        <Card _hover={{bg:"gray"}}>
+          <AiFillGithub fontSize={"40px"} />
+        </Card>
       </Link>
       <Link
         href="https://www.linkedin.com/in/patricia-silva-oliveira-/"
         isExternal
       >
-
-        <AiFillLinkedin fontSize={"55px"} color="white" />
-
+        <Card _hover={{bg:"blue.200"}} bg = "blue.400">
+          <AiFillLinkedin fontSize={"40px"} color="white" />
+        </Card>
       </Link>
       <Link
         href="https://api.whatsapp.com/send/?phone=5579996519451&text&type=phone_number&app_absent=0"
         isExternal
       >
-          <AiOutlineWhatsApp fontSize={"55px"} color="white"  />
-
+        <Card _hover={{bg:"green.200"}} bg = "green.400">
+           <AiOutlineWhatsApp fontSize={"40px"} color="white"  />
+        </Card>
       </Link>
     </Card>
   );

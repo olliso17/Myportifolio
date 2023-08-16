@@ -15,9 +15,9 @@ export const CardBody = () => {
           xl: "40vw",
         }}
         height={{
-          base: "10vh",
-          lg: "20vh",
-          xl: "20vh",
+          base: "20vh",
+          lg: "30vh",
+          xl: "30vh",
         }}
         margin={"1vh"}
       >

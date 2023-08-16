@@ -11,16 +11,18 @@ export const BoxIntrodution = ({ children }: BoxProps) => {
       border={"solid"}
       borderColor={"purple.200"}
       borderRadius={"1vw"}
-      bg={"gray.900"}
+      // bg={"gray.900"}
+      bgGradient={"linear(to-b, gray.900, gray.800, gray.600 )"}
       color="black"
       minH={"100%"}
       maxW={"100%"}
       width={{
         base: "100vw",
-        lg: "49vw",
-        xl: "49vw",
+        lg: "50vw",
+        xl: "50vw",
       }}
       justifyContent={"center"}
+      alignItems={"baseline"}
       wrap={"wrap"}
       position={{
         base: "relative",
