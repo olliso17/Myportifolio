@@ -15,17 +15,16 @@ export const CardHeader = () => {
         lg: "40vw",
         xl: "40vw",
       }}
+      bg={"gray.800"}
       display={"flex"}
       alignItems={"center"}
       justifyContent={"space-around"}
       borderRadius={"1vw"}
-      bg=" purple.900"
       margin={"1vw"}
     >
       <Heading
-        bgColor="gray.900"
+        bgColor="gray.200"
         bgClip="text"
-        textShadow={"0px 4px  #F7FAFC"}
         fontWeight="extrabold"
         fontSize={{ base: "xl", lg: "3xl", xl: "3xl" }}
         textAlign="center"
@@ -36,9 +35,8 @@ export const CardHeader = () => {
         Hi, my name is Patricia
       </Heading>
       <Text
-        bgColor="gray.900"
+        bgColor="gray.200"
         bgClip="text"
-        textShadow={"0px 4px  #F7FAFC"}
         fontWeight="extrabold"
         textAlign="center"
         padding={0}

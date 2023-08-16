@@ -23,44 +23,32 @@ export const CardFooter = () => {
         lg: "10vh",
         xl: "10vh",
       }}
+      bg={"gray.800"}
       marginTop={{ base: "5vh", lg: "15vh", xl: "15vh" }}
       display={"flex"}
       direction={"row"}
       alignItems={"center"}
       justifyContent={"space-around"}
       borderRadius={"1vw"}
-      bg=" purple.900"
       margin={"1vw"}
     >
       <Link type="button" href="https://github.com/olliso17" isExternal>
-        <Button
-          colorScheme="purple"
-          width={"55px"}
-        >
-          <AiFillGithub fontSize={"10vw"} />
-        </Button>
+        <AiFillGithub fontSize={"55px"} color="white" />
       </Link>
       <Link
         href="https://www.linkedin.com/in/patricia-silva-oliveira-/"
         isExternal
       >
-        <Button
-          colorScheme="purple"
-          width={"55px"}
-        >
-          <AiFillLinkedin fontSize={"10vw"} />
-        </Button>
+
+        <AiFillLinkedin fontSize={"55px"} color="white" />
+
       </Link>
       <Link
         href="https://api.whatsapp.com/send/?phone=5579996519451&text&type=phone_number&app_absent=0"
         isExternal
       >
-        <Button
-          colorScheme="purple"
-          width={"55px"}
-        >
-          <AiOutlineWhatsApp fontSize={"10vw"} />
-        </Button>
+          <AiOutlineWhatsApp fontSize={"55px"} color="white"  />
+
       </Link>
     </Card>
   );

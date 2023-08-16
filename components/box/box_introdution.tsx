@@ -11,7 +11,7 @@ export const BoxIntrodution = ({ children }: BoxProps) => {
       border={"solid"}
       borderColor={"purple.200"}
       borderRadius={"1vw"}
-      bg=" purple.900"
+      bg={"gray.900"}
       color="black"
       minH={"100%"}
       maxW={"100%"}
