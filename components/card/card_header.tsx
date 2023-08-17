@@ -13,7 +13,7 @@ export const CardHeader = () => {
       </Heading>
       <Text layerStyle={"textAll"} className="animated-text">
         I would like to demonstrate my study projects to everyone who is
-        accessing my portfolio
+        accessing my portfolio.
       </Text>
     </>
   );

@@ -3,7 +3,7 @@ import {
   AiFillLinkedin,
   AiOutlineWhatsApp,
 } from "react-icons/ai";
-import { Button, Card, Flex, Link } from "@chakra-ui/react";
+import { Card, Flex, Icon, Link } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
 type ContainerProps = {
@@ -12,27 +12,21 @@ type ContainerProps = {
 
 export const CardFooter = () => {
   return (
-    <Flex width={"20vw"} justifyContent={"space-between"}>
+    <Flex width={"10vw"} justifyContent={"space-between"}>
       <Link type="button" href="https://github.com/olliso17" isExternal>
-        <Card layerStyle={"cardGitHub"}>
-          <AiFillGithub fontSize={"40px"} color="white"/>
-        </Card>
+        <Icon layerStyle={"icongitHub"} as={AiFillGithub}></Icon>
       </Link>
       <Link
         href="https://www.linkedin.com/in/patricia-silva-oliveira-/"
         isExternal
       >
-        <Card layerStyle={"cardLinkedin"}>
-          <AiFillLinkedin fontSize={"40px"} color="white" />
-        </Card>
+        <Icon layerStyle={"iconLinkedin"} as={AiFillLinkedin}></Icon>
       </Link>
       <Link
         href="https://api.whatsapp.com/send/?phone=5579996519451&text&type=phone_number&app_absent=0"
         isExternal
       >
-        <Card layerStyle={"cardWhatsapp"}>
-          <AiOutlineWhatsApp fontSize={"40px"} color="white" />
-        </Card>
+        <Icon layerStyle={"iconWhatsapp"} as={AiOutlineWhatsApp}></Icon>
       </Link>
     </Flex>
   );

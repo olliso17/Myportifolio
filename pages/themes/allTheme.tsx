@@ -67,17 +67,24 @@ const allTheme = extendTheme({
       fontSize: { base: "sm", lg: "md", xl: "md" },
       margin: "1vw",
     },
-    cardGitHub: {
-      _hover: { bg: "hoverGitHubColor" },
-      bg: "gitHubColor",
-    },
-    cardLinkedin: {
-      _hover: { bg: "hoverLinkedinColor" },
-      bg: "linkedinColor",
-    },
     cardWhatsapp: {
       _hover: { bg: "hoverWhatsappColor" },
       bg: "whatsappColor",
+    },
+    iconLinkedin: {
+      fontSize: "30px",
+      _hover: { textColor: "hoverLinkedinColor" },
+      textColor: "linkedinColor",
+    },
+    icongitHub: {
+      fontSize: "30px",
+      _hover: { textColor: "hoverGitHubColor" },
+      textColor: "gitHubColor",
+    },
+    iconWhatsapp: {
+      fontSize: "30px",
+      _hover: { textColor: "hoverWhatsappColor" },
+      textColor: "whatsappColor",
     },
   },
   styles: {
