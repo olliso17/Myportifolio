@@ -1,6 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
 
-const allTheme = extendTheme({
+const theme = extendTheme({
   fonts: {
     fontFamily: "'Raleway', sans-serif",
   },
@@ -96,7 +96,5 @@ const allTheme = extendTheme({
     },
   },
 });
-
-const theme = extendTheme(allTheme);
 
 export default theme;
