@@ -14,15 +14,15 @@ export const CardFooter = () => {
   return (
     <Flex width={"20vw"} justifyContent={"space-between"}>
       <Link type="button" href="https://github.com/olliso17" isExternal>
-        <Card _hover={{ bg: "gray" }}>
-          <AiFillGithub fontSize={"40px"} />
+        <Card layerStyle={"cardGitHub"}>
+          <AiFillGithub fontSize={"40px"} color="white"/>
         </Card>
       </Link>
       <Link
         href="https://www.linkedin.com/in/patricia-silva-oliveira-/"
         isExternal
       >
-        <Card _hover={{ bg: "blue.200" }} bg="blue.400">
+        <Card layerStyle={"cardLinkedin"}>
           <AiFillLinkedin fontSize={"40px"} color="white" />
         </Card>
       </Link>
@@ -30,7 +30,7 @@ export const CardFooter = () => {
         href="https://api.whatsapp.com/send/?phone=5579996519451&text&type=phone_number&app_absent=0"
         isExternal
       >
-        <Card _hover={{ bg: "green.200" }} bg="green.400">
+        <Card layerStyle={"cardWhatsapp"}>
           <AiOutlineWhatsApp fontSize={"40px"} color="white" />
         </Card>
       </Link>

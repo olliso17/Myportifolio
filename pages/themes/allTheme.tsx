@@ -9,6 +9,12 @@ const allTheme = extendTheme({
     secondaryColorGray: "#EDF2F7",
     thirdColorGray: "#F7FAFC",
     textColor: "#2D3748",
+    gitHubColor: "#171923",
+    hoverGitHubColor: "#1A202C",
+    linkedinColor: "#3182CE",
+    hoverLinkedinColor: "#4299E1",
+    whatsappColor: "#38A169",
+    hoverWhatsappColor: "#48BB78",
   },
 
   layerStyles: {
@@ -60,6 +66,18 @@ const allTheme = extendTheme({
       padding: 0,
       fontSize: { base: "sm", lg: "md", xl: "md" },
       margin: "1vw",
+    },
+    cardGitHub: {
+      _hover: { bg: "hoverGitHubColor" },
+      bg: "gitHubColor",
+    },
+    cardLinkedin: {
+      _hover: { bg: "hoverLinkedinColor" },
+      bg: "linkedinColor",
+    },
+    cardWhatsapp: {
+      _hover: { bg: "hoverWhatsappColor" },
+      bg: "whatsappColor",
     },
   },
   styles: {
