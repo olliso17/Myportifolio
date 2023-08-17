@@ -7,22 +7,33 @@ type ContainerProps = {
 
 export const CardBody = () => {
   return (
-    <Center>
-      <Card
-        width={{
-          base: "100vw",
-          lg: "40vw",
-          xl: "40vw",
-        }}
-        height={{
-          base: "20vh",
-          lg: "30vh",
-          xl: "30vh",
-        }}
-        margin={"1vh"}
+    <>
+      <Text
+        align={"justify"}
+        fontFamily="fontFamily"
+        bgColor="gray.200"
+        bgClip="text"
+        fontWeight="extrabold"
+        padding={0}
+        className="animated-text"
+        fontSize={{ base: "sm", lg: "md", xl: "md" }}
+        margin={"1vw"}
       >
-        <Text>Body description</Text>
-      </Card>
-    </Center>
+        Dissatisfied with the area I studied (bachelor's degree in law), I
+        decided to study Programming. I started with Programming Logic,
+        javascript, html, css and made my first web pages. I fell in love with
+        the area without imagining that I would currently be developing
+        back_end, with node.js, or go, or python, or php, creating api rests,
+        using clean arch, testing, clean code, git, docker, working with
+        postgres relational databases ... non-relational moogo... constantly
+        studying good practices, learning front_end with next.js, react.js...
+        learning every day that the possibilities in this area are endless, that
+        learning is not just about it, but business rules, the rules for
+        applying any content to be developed, this is incredible because I don't
+        just learn to program, I learn how a bank app works, for example, a
+        registration app... In short, I fell in love with the area and I
+        continue to learn with pleasure.
+      </Text>
+    </>
   );
 };

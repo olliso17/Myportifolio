@@ -6,21 +6,5 @@ type ContainerProps = {
 };
 
 export const ContainerBody = ({ children }: ContainerProps) => {
-  return (
-    <Flex
-      className="box_context"
-      maxW={"100vw"}
-      width={"100vw"}
-      display={"flex"}
-      alignItems={"baseline"}
-      flexDirection={{
-        base: "column",
-        lg: "row",
-        xl: "row",
-      }}
-      justifyContent={"space-between"}
-    >
-      {children}
-    </Flex>
-  );
+  return <Flex layerStyle={"containerBodyTheme"}>{children}</Flex>;
 };

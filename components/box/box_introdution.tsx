@@ -6,33 +6,5 @@ type BoxProps = {
 };
 
 export const BoxIntrodution = ({ children }: BoxProps) => {
-  return (
-    <Flex
-      border={"solid"}
-      borderColor={"purple.200"}
-      borderRadius={"1vw"}
-      // bg={"gray.900"}
-      bgGradient={"linear(to-b, gray.900, gray.800, gray.600 )"}
-      color="black"
-      minH={"100%"}
-      maxW={"100%"}
-      width={{
-        base: "100vw",
-        lg: "50vw",
-        xl: "50vw",
-      }}
-      justifyContent={"center"}
-      alignItems={"baseline"}
-      wrap={"wrap"}
-      position={{
-        base: "relative",
-        lg: "fixed",
-        xl: "fixed",
-      }}
-      bottom={{ base: 0, lg: 0, xl: 0 }}
-      left={{ base: 0, lg: 0, xl: 0 }}
-    >
-      {children}
-    </Flex>
-  );
+  return <Box layerStyle={"boxIntrodution"}>{children}</Box>;
 };

@@ -7,21 +7,9 @@ type ContainerProps = {
 
 export const CardHeader = () => {
   return (
-    <Card
-      width={{
-        base: "90vw",
-        lg: "40vw",
-        xl: "40vw",
-      }}
-      bg={"gray.800"}
-      display={"flex"}
-      alignItems={"center"}
-      justifyContent={"space-around"}
-      borderRadius={"1vw"}
-      margin={"1vw"}
-    >
+    <>
       <Heading
-        fontFamily="body"
+        fontFamily="fontFamily"
         bgColor="gray.200"
         bgClip="text"
         fontWeight="extrabold"
@@ -31,10 +19,10 @@ export const CardHeader = () => {
         padding={0}
         className="animated-title"
       >
-        Hi, my name is Patricia
+        Hi, my name is Patricia Oliveira!
       </Heading>
       <Text
-        fontFamily="body"
+        fontFamily="fontFamily"
         bgColor="gray.200"
         bgClip="text"
         fontWeight="extrabold"
@@ -47,6 +35,6 @@ export const CardHeader = () => {
         I would like to demonstrate my study projects to everyone who is
         accessing my portfolio
       </Text>
-    </Card>
+    </>
   );
 };
