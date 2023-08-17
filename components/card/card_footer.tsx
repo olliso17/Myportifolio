@@ -12,7 +12,7 @@ type ContainerProps = {
 
 export const CardFooter = () => {
   return (
-    <Flex width={"10vw"} justifyContent={"space-between"}>
+    <Flex layerStyle={"cardFooter"} >
       <Link type="button" href="https://github.com/olliso17" isExternal>
         <Icon layerStyle={"icongitHub"} as={AiFillGithub}></Icon>
       </Link>

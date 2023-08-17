@@ -5,16 +5,21 @@ const theme = extendTheme({
     fontFamily: "'Raleway', sans-serif",
   },
   colors: {
-    primaryColorGray: "#E2E8F0",
-    secondaryColorGray: "#EDF2F7",
-    thirdColorGray: "#F7FAFC",
-    textColor: "#2D3748",
+    primarygradientColor: "#1A1311",
+    secondaryGradientColor: "#402B2C",
+    thirdGradientthColor: "#796D67",
+    baseColor: "#988C86",
+    textColor: "#F6F5F4",
+    cardColor: "#F6F5F4",
     gitHubColor: "#171923",
     hoverGitHubColor: "#1A202C",
     linkedinColor: "#3182CE",
     hoverLinkedinColor: "#4299E1",
     whatsappColor: "#38A169",
     hoverWhatsappColor: "#48BB78",
+    buttonColor: "#1A1311",
+    hoverButtonColor: "#402B2C"
+
   },
 
   layerStyles: {
@@ -24,9 +29,9 @@ const theme = extendTheme({
       alignItems: "center",
       justifyContent: "space-around",
       bgGradient:
-        "linear-gradient(to bottom, primaryColorGray, secondaryColorGray, thirdColorGray)",
+        "linear-gradient(to bottom, primarygradientColor, secondaryGradientColor, thirdGradientthColor)",
       border: "solid",
-      borderColor: "purple.200",
+      borderColor: "baseColor",
       borderRadius: "1vw",
       minH: "100%",
       maxW: "100%",
@@ -67,6 +72,15 @@ const theme = extendTheme({
       fontSize: { base: "sm", lg: "md", xl: "md" },
       margin: "1vw",
     },
+    cardFooter: {
+      display: "flex",
+      width: "12vw", 
+      height: "40px", 
+      justifyContent: "space-around",
+      alignItems:"center",
+      borderRadius:"10px",
+      bg:"cardColor"
+    },
     cardWhatsapp: {
       _hover: { bg: "hoverWhatsappColor" },
       bg: "whatsappColor",
@@ -91,7 +105,7 @@ const theme = extendTheme({
     global: {
       body: {
         fontFamily: "fontFamily",
-        backgroundColor: "white",
+        backgroundColor: "baseColor",
       },
     },
   },
