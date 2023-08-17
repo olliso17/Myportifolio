@@ -8,17 +8,7 @@ type ContainerProps = {
 export const CardBody = () => {
   return (
     <>
-      <Text
-        align={"justify"}
-        fontFamily="fontFamily"
-        bgColor="gray.200"
-        bgClip="text"
-        fontWeight="extrabold"
-        padding={0}
-        className="animated-text"
-        fontSize={{ base: "sm", lg: "md", xl: "md" }}
-        margin={"1vw"}
-      >
+      <Text layerStyle={"cardBody"} className={"animated-text"}>
         Dissatisfied with the area I studied (bachelor's degree in law), I
         decided to study Programming. I started with Programming Logic,
         javascript, html, css and made my first web pages. I fell in love with
