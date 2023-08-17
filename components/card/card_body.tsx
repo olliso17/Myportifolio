@@ -8,7 +8,7 @@ type ContainerProps = {
 export const CardBody = () => {
   return (
     <>
-      <Text layerStyle={"cardBody"} className={"animated-text"}>
+      <Text layerStyle={"textAll"} className={"animated-text"}>
         Dissatisfied with the area I studied (bachelor's degree in law), I
         decided to study Programming. I started with Programming Logic,
         javascript, html, css and made my first web pages. I fell in love with

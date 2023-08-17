@@ -8,7 +8,7 @@ const allTheme = extendTheme({
     primaryColorGray: "#E2E8F0",
     secondaryColorGray: "#EDF2F7",
     thirdColorGray: "#F7FAFC",
-    textColor:"#2D3748"
+    textColor: "#2D3748",
   },
 
   layerStyles: {
@@ -51,15 +51,15 @@ const allTheme = extendTheme({
       },
       justifyContent: "space-between",
     },
-    cardBody:{
-      textAlign:"justify",
-      fontFamily:"fontFamily",
-      bgColor:"textColor",
-      bgClip:"text",
-      fontWeight:"extrabold",
-      padding:0,
-      fontSize:{ base: "sm", lg: "md", xl: "md"},
-      margin:"1vw",
+    textAll: {
+      textAlign: "justify",
+      fontFamily: "fontFamily",
+      bgColor: "textColor",
+      bgClip: "text",
+      fontWeight: "extrabold",
+      padding: 0,
+      fontSize: { base: "sm", lg: "md", xl: "md" },
+      margin: "1vw",
     },
   },
   styles: {
