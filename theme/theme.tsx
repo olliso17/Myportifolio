@@ -10,7 +10,8 @@ const theme = extendTheme({
     thirdGradientthColor: "#796D67",
     baseColor: "#988C86",
     textColor: "#F6F5F4",
-    cardColor: "#F6F5F4",
+    cardIconColor: "#F6F5F4",
+    cardColor: "#402B2C",
     gitHubColor: "#171923",
     hoverGitHubColor: "#1A202C",
     linkedinColor: "#3182CE",
@@ -49,6 +50,28 @@ const theme = extendTheme({
       bottom: { base: 0, lg: 0, xl: 0 },
       left: { base: 0, lg: 0, xl: 0 },
     },
+    boxContext:{
+      bgGradient:
+        "linear-gradient(to bottom,thirdGradientthColor, primarygradientColor, secondaryGradientColor, )",
+      maxW:"100%",
+      display:"flex",
+      flexDirection:"column",
+      width:{
+        base: "100vw",
+        lg: "50vw",
+        xl: "50vw",
+      },
+      // pl:{[4, 8, 16, 32]}
+      position:{
+        base: "relative",
+        lg: "absolute",
+        xl: "absolute",
+      },
+      justifyContent:"center",
+      alignItems:"center",
+      right:{ base: 0, lg: 0, xl: 0 }
+    },
+
     containerBodyTheme: {
       className: "box_context",
       maxW: "100vw",
@@ -74,12 +97,12 @@ const theme = extendTheme({
     },
     cardFooter: {
       display: "flex",
-      width: "12vw", 
+      width: "120px", 
       height: "40px", 
       justifyContent: "space-around",
       alignItems:"center",
       borderRadius:"10px",
-      bg:"cardColor"
+      bg:"cardIconColor"
     },
     cardWhatsapp: {
       _hover: { bg: "hoverWhatsappColor" },

@@ -1,6 +1,7 @@
 import { Box } from "../components/box";
 import { Card } from "../components/card";
 import { Container } from "../components/container";
+import allDescriptions from "../util/myDescription";
 
 export default function Home() {
   return (
@@ -12,7 +13,8 @@ export default function Home() {
         <Card.footer />
       </Box.introducion>
       <Box.context>
-        <Card.context />
+        <Card.context nameProject="task_go" description={allDescriptions[3]}/>
+        <Card.context nameProject="Myportifolio" description={allDescriptions[4]}/>
       </Box.context>
     </Container.body>
   );

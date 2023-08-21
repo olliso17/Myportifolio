@@ -1,10 +1,6 @@
 import { Heading, Text } from "@chakra-ui/react";
-import { ReactNode } from "react";
 import allDescriptions from "../../util/myDescription";
 
-type ContainerProps = {
-  children: ReactNode;
-};
 
 export const CardHeader = () => {
   return (
