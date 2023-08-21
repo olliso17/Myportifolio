@@ -6,10 +6,11 @@ import allDescriptions from "../../util/myDescription";
 
 type ProjectProps={
   nameProject: string;
-  description: string
+  description: string;
+  href: string
 }
 
-export const CardContext = ({nameProject, description}:ProjectProps) => {
+export const CardContext = ({nameProject, description, href}:ProjectProps) => {
   const [users, setUsers] = useState<any>();
   const [userRepo, setUserRepo] = useState<any>();
   const { format } = require('date-fns');
@@ -67,10 +68,12 @@ export const CardContext = ({nameProject, description}:ProjectProps) => {
             </CardHeader>
             <CardBody>
               <Text layerStyle={"textAll"}>{description}</Text>
-              <Card >
+              <Card margin={"1vw"}>
                 <Link href={userRepo.html_url}>{userRepo.html_url}</Link>
               </Card>
-              
+              <Card margin={"1vw"}>
+                <Link href={href}>{href}</Link>
+              </Card>
               <Text layerStyle={"textAll"}>Linguagem Predominante: {userRepo.language}</Text>
              
             </CardBody>
