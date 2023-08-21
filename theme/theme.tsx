@@ -5,10 +5,10 @@ const theme = extendTheme({
     fontFamily: "'Raleway', sans-serif",
   },
   colors: {
-    primarygradientColor: "#1A1311",
+    primaryGradientColor: "#1A1311",
     secondaryGradientColor: "#402B2C",
     thirdGradientthColor: "#796D67",
-    baseColor: "#988C86",
+    baseColor: "#1A1311",
     textColor: "#F6F5F4",
     cardIconColor: "#F6F5F4",
     cardColor: "#402B2C",
@@ -19,7 +19,8 @@ const theme = extendTheme({
     whatsappColor: "#38A169",
     hoverWhatsappColor: "#48BB78",
     buttonColor: "#1A1311",
-    hoverButtonColor: "#402B2C"
+    hoverButtonColor: "#402B2C",
+    cardBodyContextColor:"#312121"
 
   },
 
@@ -30,7 +31,7 @@ const theme = extendTheme({
       alignItems: "center",
       justifyContent: "space-around",
       bgGradient:
-        "linear-gradient(to bottom, primarygradientColor, secondaryGradientColor, thirdGradientthColor)",
+        "linear-gradient(to bottom, primaryGradientColor, secondaryGradientColor, thirdGradientthColor)",
       border: "solid",
       borderColor: "baseColor",
       borderRadius: "1vw",
@@ -52,7 +53,7 @@ const theme = extendTheme({
     },
     boxContext:{
       bgGradient:
-        "linear-gradient(to bottom,thirdGradientthColor, primarygradientColor, secondaryGradientColor, )",
+        "linear-gradient(to bottom,thirdGradientthColor, primaryGradientColor, secondaryGradientColor, )",
       maxW:"100%",
       display:"flex",
       flexDirection:"column",
@@ -103,6 +104,24 @@ const theme = extendTheme({
       alignItems:"center",
       borderRadius:"10px",
       bg:"cardIconColor"
+    },
+    cardContext:{
+      width:{
+        base: "95vw",
+        lg: "45vw",
+        xl: "45vw",
+      },
+      margin:"0.5vw",
+      bg:"cardColor",
+      border:"solid"
+    },
+    cardHeaderContext:{
+      bg:"primaryGradientColor",
+      margin:"0.5vw"
+    },
+    cardBodyContext:{
+      bg:"cardBodyContextColor",
+      margin:"0.5vw"
     },
     cardWhatsapp: {
       _hover: { bg: "hoverWhatsappColor" },

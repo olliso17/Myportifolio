@@ -50,23 +50,16 @@ export const CardContext = ({nameProject, description, href}:ProjectProps) => {
       { userRepo &&
 
           <Card
-            // pl={[4, 8, 16, 32]}
-            width={{
-              base: "90vw",
-              lg: "40vw",
-              xl: "40vw",
-            }}
-            key={userRepo.id}
-            margin={"1vh"}
-            bg={"cardColor"}
-            border={"solid"}
+           layerStyle={"cardContext"}
+        key={userRepo.id}
+         
           >
-            <CardHeader>
+            <CardHeader layerStyle={"cardHeaderContext"}>
               <Heading layerStyle={"textAll"}>Project named: {userRepo.name}</Heading>
               <Text layerStyle={"textAll"}>created in: {userRepo.created_at}</Text>
 
             </CardHeader>
-            <CardBody>
+            <CardBody layerStyle={"cardBodyContext"}>
               <Text layerStyle={"textAll"}>{description}</Text>
               <Card margin={"1vw"}>
                 <Link href={userRepo.html_url}>{userRepo.html_url}</Link>
