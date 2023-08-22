@@ -1,78 +1,80 @@
 import { extendTheme } from "@chakra-ui/react";
 
+const colorsSelect = {
+  primaryGradientColor: "#a296bf",
+  secondaryGradientColor: "#b5b8e2",
+  thirdGradienthColor: "#e1dbf1",
+  fourthGradienthColor: "#f1edfb",
+  baseColor: "#e1dbf1",
+  textColor: "#171923",
+  cardIconColor: "#F6F5F4",
+  cardColor: "#f1edfb",
+  gitHubColor: "#171923",
+  hoverGitHubColor: "#1A202C",
+  linkedinColor: "#3182CE",
+  hoverLinkedinColor: "#4299E1",
+  whatsappColor: "#38A169",
+  hoverWhatsappColor: "#48BB78",
+};
+const boxContext = {
+  bgGradient:
+    "linear-gradient(232deg,primaryGradientColor 0%, secondaryGradientColor 52%, thirdGradienthColor 82%, fourthGradienthColor 97%)",
+  maxW: "100%",
+  display: "flex",
+  width: {
+    base: "100vw",
+    lg: "60vw",
+    xl: "60vw",
+  },
+  flexDirection: {
+    base: "column",
+    lg: "row",
+    xl: "row",
+  },
+  position: {
+    base: "relative",
+    lg: "absolute",
+    xl: "absolute",
+  },
+  justifyContent: "center",
+  alignItems: { base: "center", lg: "baseline", xl: "baseline" },
+  right: { base: 0, lg: 0, xl: 0 },
+};
+
+const boxIntrodution = {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+  bgGradient:
+    "linear-gradient(128deg, primaryGradientColor 0%, secondaryGradientColor 52%, thirdGradienthColor 82%, fourthGradienthColor 97%)",
+  minH: "100%",
+  maxW: "100%",
+  // height: "80vh",
+  width: {
+    base: "100vw",
+    lg: "40vw",
+    xl: "40vw",
+  },
+  gap: "1vw",
+  position: {
+    base: "relative",
+    lg: "fixed",
+    xl: "fixed",
+  },
+  bottom: { base: 0, lg: 0, xl: 0 },
+  left: { base: 0, lg: 0, xl: 0 },
+};
+
 const theme = extendTheme({
   fonts: {
     fontFamily: "'Raleway', sans-serif",
   },
-  colors: {
-    primaryGradientColor: "#1A1311",
-    secondaryGradientColor: "#402B2C",
-    thirdGradientthColor: "#796D67",
-    baseColor: "#1A1311",
-    textColor: "#F6F5F4",
-    cardIconColor: "#F6F5F4",
-    cardColor: "#402B2C",
-    gitHubColor: "#171923",
-    hoverGitHubColor: "#1A202C",
-    linkedinColor: "#3182CE",
-    hoverLinkedinColor: "#4299E1",
-    whatsappColor: "#38A169",
-    hoverWhatsappColor: "#48BB78",
-    buttonColor: "#1A1311",
-    hoverButtonColor: "#402B2C",
-    cardBodyContextColor:"#312121"
-
-  },
+  colors: colorsSelect,
 
   layerStyles: {
-    boxIntrodution: {
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      justifyContent: "space-around",
-      bgGradient:
-        "linear-gradient(to bottom, primaryGradientColor, secondaryGradientColor, thirdGradientthColor)",
-      border: "solid",
-      borderColor: "baseColor",
-      borderRadius: "1vw",
-      minH: "100%",
-      maxW: "100%",
-      width: {
-        base: "100vw",
-        lg: "49vw",
-        xl: "49vw",
-      },
-      wrap: "wrap",
-      position: {
-        base: "relative",
-        lg: "fixed",
-        xl: "fixed",
-      },
-      bottom: { base: 0, lg: 0, xl: 0 },
-      left: { base: 0, lg: 0, xl: 0 },
-    },
-    boxContext:{
-      bgGradient:
-        "linear-gradient(to bottom,thirdGradientthColor, primaryGradientColor, secondaryGradientColor, )",
-      maxW:"100%",
-      display:"flex",
-      flexDirection:"column",
-      width:{
-        base: "100vw",
-        lg: "50vw",
-        xl: "50vw",
-      },
-      // pl:{[4, 8, 16, 32]}
-      position:{
-        base: "relative",
-        lg: "absolute",
-        xl: "absolute",
-      },
-      justifyContent:"center",
-      alignItems:"center",
-      right:{ base: 0, lg: 0, xl: 0 }
-    },
-
+    boxIntrodution,
+    boxContext,
     containerBodyTheme: {
       className: "box_context",
       maxW: "100vw",
@@ -93,35 +95,60 @@ const theme = extendTheme({
       bgClip: "text",
       fontWeight: "extrabold",
       padding: 0,
-      fontSize: { base: "sm", lg: "md", xl: "md" },
+      fontSize: { base: "lg", lg: "sm", xl: "sm" },
+      margin: "1vw",
+    },
+    textTitle: {
+      textAlign: "justify",
+      fontFamily: "fontFamily",
+      bgColor: "textColor",
+      bgClip: "text",
+      fontWeight: "extrabold",
+      padding: 0,
+      fontSize: { base: "lg", lg: "lg", xl: "lg" },
       margin: "1vw",
     },
     cardFooter: {
       display: "flex",
-      width: "120px", 
-      height: "40px", 
+      width: "120px",
+      height: "40px",
       justifyContent: "space-around",
-      alignItems:"center",
-      borderRadius:"10px",
-      bg:"cardIconColor"
+      alignItems: "center",
+      borderRadius: "10px",
+      bg: "cardIconColor",
     },
-    cardContext:{
-      width:{
+    cardContext: {
+      width: {
         base: "95vw",
-        lg: "45vw",
-        xl: "45vw",
+        lg: "40vw",
+        xl: "28vw",
       },
-      margin:"0.5vw",
-      bg:"cardColor",
-      border:"solid"
+      _hover: {
+        boxShadow: "dark-lg", // Estilo de hover
+      },
+      margin: "0.5vw",
+      bgGradient:
+      "linear-gradient(128deg, secondaryGradientColor 22%, fourthGradienthColor 97%)",
     },
-    cardHeaderContext:{
-      bg:"primaryGradientColor",
-      margin:"0.5vw"
+    cardHeaderContext: {
+      bg: "secondaryGradientColor",
+      margin: "0.5vw",
+      borderRadius: "10px",
     },
-    cardBodyContext:{
-      bg:"cardBodyContextColor",
-      margin:"0.5vw"
+    cardBodyIntrodytion: {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      width: {
+        base: "95vw",
+        lg: "40vw",
+        xl: "35vw",
+      },
+      _hover: {
+        boxShadow: "dark-lg", // Estilo de hover
+      },
+      bgGradient:
+      "linear-gradient(128deg, primaryGradientColor 0%, secondaryGradientColor 20%, thirdGradienthColor 50%, fourthGradienthColor 87%)",
     },
     cardWhatsapp: {
       _hover: { bg: "hoverWhatsappColor" },

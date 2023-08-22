@@ -6,5 +6,5 @@ type BoxProps = {
 };
 
 export const BoxIntrodution = ({ children }: BoxProps) => {
-  return <Box layerStyle={"boxIntrodution"}>{children}</Box>;
+  return <Box layerStyle={"boxIntrodution"} >{children}</Box>;
 };

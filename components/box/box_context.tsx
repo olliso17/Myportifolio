@@ -15,6 +15,7 @@ type BoxProps = {
 export const BoxContext = ({ children }: BoxProps) => {
   return (
     <Flex
+    wrap= "wrap"
    layerStyle={"boxContext"}
     >
       {children}
