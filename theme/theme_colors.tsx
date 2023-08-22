@@ -1,0 +1,16 @@
+export const colorsSelect = {
+    primaryGradientColor: "#020024",
+    secondaryGradientColor: "#616167",
+    thirdGradienthColor: "#a7a8ab",
+    fourthGradienthColor: "#f3f6f6",
+    baseColor: "white",
+    textColor: "#171923",
+    cardIconColor: "#F6F5F4",
+    cardColor: "white",
+    gitHubColor: "#171923",
+    hoverGitHubColor: "#1A202C",
+    linkedinColor: "#3182CE",
+    hoverLinkedinColor: "#4299E1",
+    whatsappColor: "#38A169",
+    hoverWhatsappColor: "#48BB78",
+  };

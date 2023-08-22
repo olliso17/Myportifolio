@@ -1,70 +1,9 @@
 import { extendTheme } from "@chakra-ui/react";
+import { boxIntrodution } from "./theme_box_introdution";
+import { colorsSelect } from "./theme_colors";
+import { boxContext } from "./theme_box_context";
+import { containerBodyTheme } from "./theme_container";
 
-const colorsSelect = {
-  primaryGradientColor: "#a296bf",
-  secondaryGradientColor: "#b5b8e2",
-  thirdGradienthColor: "#e1dbf1",
-  fourthGradienthColor: "#f1edfb",
-  baseColor: "#e1dbf1",
-  textColor: "#171923",
-  cardIconColor: "#F6F5F4",
-  cardColor: "#f1edfb",
-  gitHubColor: "#171923",
-  hoverGitHubColor: "#1A202C",
-  linkedinColor: "#3182CE",
-  hoverLinkedinColor: "#4299E1",
-  whatsappColor: "#38A169",
-  hoverWhatsappColor: "#48BB78",
-};
-const boxContext = {
-  bgGradient:
-    "linear-gradient(232deg,primaryGradientColor 0%, secondaryGradientColor 52%, thirdGradienthColor 82%, fourthGradienthColor 97%)",
-  maxW: "100%",
-  display: "flex",
-  width: {
-    base: "100vw",
-    lg: "60vw",
-    xl: "60vw",
-  },
-  flexDirection: {
-    base: "column",
-    lg: "row",
-    xl: "row",
-  },
-  position: {
-    base: "relative",
-    lg: "absolute",
-    xl: "absolute",
-  },
-  justifyContent: "center",
-  alignItems: { base: "center", lg: "baseline", xl: "baseline" },
-  right: { base: 0, lg: 0, xl: 0 },
-};
-
-const boxIntrodution = {
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  justifyContent: "center",
-  bgGradient:
-    "linear-gradient(128deg, primaryGradientColor 0%, secondaryGradientColor 52%, thirdGradienthColor 82%, fourthGradienthColor 97%)",
-  minH: "100%",
-  maxW: "100%",
-  // height: "80vh",
-  width: {
-    base: "100vw",
-    lg: "40vw",
-    xl: "40vw",
-  },
-  gap: "1vw",
-  position: {
-    base: "relative",
-    lg: "fixed",
-    xl: "fixed",
-  },
-  bottom: { base: 0, lg: 0, xl: 0 },
-  left: { base: 0, lg: 0, xl: 0 },
-};
 
 const theme = extendTheme({
   fonts: {
@@ -75,19 +14,7 @@ const theme = extendTheme({
   layerStyles: {
     boxIntrodution,
     boxContext,
-    containerBodyTheme: {
-      className: "box_context",
-      maxW: "100vw",
-      width: "100vw",
-      display: "flex",
-      alignItems: "baseline",
-      flexDirection: {
-        base: "column",
-        lg: "row",
-        xl: "row",
-      },
-      justifyContent: "space-between",
-    },
+    containerBodyTheme,
     textAll: {
       textAlign: "justify",
       fontFamily: "fontFamily",
